@@ -14,7 +14,7 @@ public class MajorityElement {
         return element;
     }
     public static void main(String[] args) {
-        int[] nums= {2,2,1,2,1,1,1};
+        int[] nums= {3, 3, 4};
         MajorityElement output = new MajorityElement();
         int result = output.majorityElement(nums);
         System.out.println(result);
