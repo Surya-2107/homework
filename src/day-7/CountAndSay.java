@@ -3,15 +3,15 @@ public class CountAndSay {
         String current="1";
         for (int i=1; i<n; i++){
             String next = "";
-            i=0;
-            while (i<current.length()){
+            int j=0;
+            while (j<current.length()){
                 int currcharCount =1;
-                while (i<current.length()-1 && (current.charAt(i) == current.charAt(i+1))){
+                while (j<current.length()-1 && (current.charAt(j) == current.charAt(j+1))){
                     currcharCount = currcharCount+1;
-                    i= i+1;
+                    j= j+1;
                 }
-                next = next + Integer.toString(currcharCount)+current.charAt(i);
-                i=i+1;
+                next = next + Integer.toString(currcharCount)+current.charAt(j);
+                j=j+1;
             }
             current=next;
         }
